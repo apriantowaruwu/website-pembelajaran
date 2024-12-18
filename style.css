@@ -1,0 +1,453 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0; /* Tidak valid, harus diubah menjadi `margin: 0;` untuk menghapus margin default browser */
+  padding: 0; /* Tidak valid, harus diubah menjadi nilai seperti `padding: 0;` atau pixel */
+  background-color: #cfcfcff9; /* Memberikan warna latar belakang abu-abu terang pada seluruh halaman */
+  text-align: center; /* Mengatur teks di dalam konten latihan agar rata tengah */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+  border: 3px solid #00000092;
+}
+
+
+header {
+  display: flex; /* Menggunakan tata letak flexbox untuk elemen di dalam header */
+  justify-content: space-between; /* Menyebarkan elemen di dalam header agar berjauhan */
+  align-items: center; /* Menjaga elemen dalam header sejajar secara vertikal */
+  padding: 20px; /* Memberikan ruang di dalam elemen header */
+  background-color: #463c30f0; /* Warna latar belakang  untuk header */
+  color: white; /* Warna teks putih */
+}
+
+.header-logo {
+  display: flex; /* Menggunakan flexbox untuk elemen di dalam logo header */
+  align-items: center; /* Menjaga elemen dalam logo sejajar secara vertikal */
+
+}
+
+button {
+  background-color: #3c2802;
+  color: white;
+  padding: 10px 20px;
+  border: 5px solid #432405;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow:  10px 10px 5px 1px rgba(0, 0, 0, 0.297); /* Menambahkan efek bayangan */
+}
+button:hover {
+  background-color: #683a03b9;
+}
+
+.toggle-btn {
+  background-color: transparent; /* Menghapus warna latar belakang tombol */
+  border: none; /* Menghapus border tombol */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan */
+  padding: 17px; /* Memberikan ruang di sekitar tombol */
+  margin-right: 2px; /* Memberikan jarak antara tombol dan elemen lain di header */
+}
+
+.bar {
+  display: block; /* Mengubah elemen menjadi blok (garis horisontal) */
+  width: 19px; /* Lebar garis */
+  height: 3px; /* Tinggi garis */
+  background-color: #000000; /* Warna latar garis */
+  margin: 5px auto; /* Memberikan jarak antar garis dan memposisikannya di tengah */
+}
+
+.header-logo h1 {
+  color: #f9f6f6; /* Warna teks putih cerah */
+  font-size: 30px; /* Ukuran font besar untuk judul logo */
+  font-weight: bold; /* Membuat teks menjadi tebal */
+  margin: 0; /* Menghapus margin default pada heading */
+}
+
+#nav-menu {
+  display: none; /* Menu navigasi default disembunyikan */
+  background-color: hsl(0, 7%, 47%); /* Warna latar belakang hitam dengan transparansi */
+  padding: 30px; /* Memberikan ruang di dalam menu */
+  position: absolute; /* Posisi menu relatif terhadap halaman */
+  top: 85px; /* Jarak dari atas halaman */
+  left: 0; /* Tidak valid, harus diubah menjadi pixel atau `left: 0;` */
+  width: 200px; /* Lebar menu */
+  transition: transform 0.3s ease-in-out; /* Animasi untuk smooth effect */
+}
+
+#nav-menu ul {
+  list-style: none; /* Menghapus tanda bullet pada daftar menu */
+  margin: 0; /* Tidak valid, harus diubah menjadi `margin: 0;` */
+  padding: 0; /* Tidak valid, harus diubah menjadi nilai seperti pixel */
+}
+
+#nav-menu li {
+  margin-bottom: 25px; /* Memberikan jarak antar item menu */
+}
+
+#nav-menu a {
+  color: #0e0d0d; /* Warna teks putih */
+  text-decoration: none; /* Menghapus garis bawah pada teks link */
+  padding: 15px; /* Memberikan ruang dalam menu */
+  border-radius: 5px; /* Membuat sudut item menu membulat */
+  transition: box-shadow 0.955ms, background-color 0.955ms; /* Menambahkan transisi animasi */
+}
+
+#nav-menu a.active {
+  background-color: #70480d; /* Warna latar belakang untuk item aktif */
+  color: #e9e0e0; /* Warna teks item aktif */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+}
+
+main {
+  margin-left: 0px; /* Tidak valid, harus diubah menjadi nilai pixel atau `margin: 0;` */
+  padding: 5px; /* Memberikan ruang di dalam elemen utama */
+}
+
+section {
+  margin-bottom: 30px; /* Memberikan jarak bawah antar section */
+}
+
+h1 {
+  font-size: 25px; /* Ukuran font besar untuk heading */
+  font-weight: bold; /* Membuat teks heading menjadi tebal */
+  margin-bottom: 30px; /* Memberikan jarak bawah heading */
+}
+
+/* Tambahan untuk materi */
+
+.materi-konten {
+  font-family: 'Times New Roman', Times, serif;
+  display: grid; /* Mengatur layout menggunakan grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Membuat kolom dengan lebar minimum 250px, menyesuaikan ruang yang tersedia */
+  gap: 20px; /* Memberikan jarak antar elemen grid sebesar 20px */
+  padding: 20px; /* Memberikan ruang di dalam elemen konten sebesar 20px */
+  text-align: center; /* Mengatur teks di dalam konten latihan agar rata tengah */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+}
+
+.materi-kotak {
+  background-color: white; /* Memberikan warna latar belakang putih untuk setiap item latihan */
+  border-radius: 10px; /* Membuat sudut elemen menjadi melengkung dengan radius 10px */
+  box-shadow: 10px 4px 6px rgba(7, 8, 9, 0.822); /* Memberikan efek bayangan ringan di bawah elemen */
+  padding: 20px; /* Memberikan ruang di dalam item latihan sebesar 20px */
+  text-align: center; /* Mengatur teks di dalam item agar rata tengah */
+  transition: transform 0.3s, box-shadow 0.3s; /* Menambahkan animasi transisi saat item di-hover */
+}
+
+.materi-konten:hover {
+  transform: translateY(-5px); /* Memindahkan item latihan ke atas sebesar 5px saat di-hover */
+  box-shadow: 10px 6px 12px rgb(0, 0, 0); /* Menambahkan efek bayangan lebih gelap dan besar saat di-hover */
+}
+
+/* Animasi saat hover */
+.materi-kotak:hover {
+  transform: translateY(-10px); /* Menggerakkan elemen sedikit ke atas */
+  box-shadow: 12px 6px 12px rgba(50, 6, 228, 0.956); /* Memperbesar bayangan */
+}
+
+/* Animasi saat di-klik (active) */
+.materi-kotak:active {
+  transform: scale(0.95); /* Mengecilkan elemen sedikit */
+  box-shadow: 6px 3px 8px rgba(0, 0, 0, 0.3); /* Mengurangi bayangan */
+}
+
+
+.materi-kotak h2 {
+    margin: 10 10 10px; /* Menghapus margin atas dan memberikan margin bawah 10px untuk heading */
+}
+
+.materi-kotak p {
+font-size: 20px; /* Mengatur ukuran teks paragraf menjadi 14px */
+ margin-bottom: 15px; /* Memberikan jarak bawah 15px pada paragraf */
+}
+
+.materi-kotak:nth-child(1) {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Memberikan latar belakang gradien oranye ke kuning untuk kotak pertama */
+}
+.materi-kotak:nth-child(2) {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Memberikan latar belakang gradien ungu ke biru untuk kotak kedua */
+}
+.materi-kotak:nth-child(3) {
+    background: linear-gradient(to right, #11998e, #38ef7d); /* Memberikan latar belakang gradien hijau gelap ke hijau terang untuk kotak ketiga */
+}
+.materi-kotak:nth-child(4) {
+    background: linear-gradient(to right, #ff512f, #a5e406); /* Memberikan latar belakang gradien merah ke merah muda untuk kotak keempat */
+}
+.materi-kotak:nth-child(5) {
+
+  background: linear-gradient(to right, #df0467, #06ceed); /* Memberikan latar belakang gradien merah ke merah muda untuk kotak keempat */
+}
+.materi-kotak:nth-child(6) {
+
+  background: linear-gradient(to right, #8207e8, #f0a105); /* Memberikan latar belakang gradien merah ke merah muda untuk kotak keempat */
+}
+.materi-kotak:nth-child(7) {
+  background: linear-gradient(to right, #f00606, #dd2476); /* Memberikan latar belakang gradien merah ke merah muda untuk kotak keempat */
+}
+.materi-kotak:nth-child(8) {
+  background: linear-gradient(to right, #f00606, #dd2476); /* Memberikan latar belakang gradien merah ke merah muda untuk kotak keempat */
+}
+.materi-kotak:nth-child(9) {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Memberikan latar belakang gradien ungu ke biru untuk kotak kedua */
+}
+.materi-kotak:nth-child(10) {
+    background: linear-gradient(to right, #11998e, #38ef7d); /* Memberikan latar belakang gradien hijau gelap ke hijau terang untuk kotak ketiga */
+}
+
+.tombol-masuk {
+    background-color: rgba(11, 8, 104, 0.9); /* Memberikan warna latar belakang biru tua transparan */
+    color: #eae0e0; /* Memberikan warna teks putih krem */
+    border: none; /* Menghapus border tombol */
+    padding: 10px 20px; /* Memberikan ruang dalam tombol: 10px atas/bawah dan 20px kiri/kanan */
+    border-radius: 5px; /* Membulatkan sudut tombol dengan radius 5px */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+    transition: background-color 0.3s; /* Menambahkan transisi perubahan warna latar belakang selama 0.3 detik */
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.881); /* Memberikan efek bayangan dengan warna merah tua */
+}
+
+.tombol-masuk:hover {
+    background-color: #910a0a; /* Mengubah warna latar belakang tombol menjadi biru gelap saat di-hover */
+}
+
+/* latihan */
+.latihan-konten {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center; /* Mengatur teks di dalam konten latihan agar rata tengah */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+}
+
+.latihan-item:nth-child(1) {
+  background: linear-gradient(to right, #147210, #e86706); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+.latihan-item:nth-child(2) {
+  background: linear-gradient(to right, #199512, #7505ed); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+.latihan-item:nth-child(3) {
+  background: linear-gradient(to right, #199512, #04e7fb); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+.latihan-item:nth-child(4) {
+  background: linear-gradient(to right, #199512, #dc05ca); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+.latihan-item:nth-child(5) {
+  background: linear-gradient(to right, #199512,rgb(245, 237, 7)); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+.latihan-item:nth-child(6) {
+  background: linear-gradient(to right, #199512, #dc05ca); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+.latihan-item:nth-child(7) {
+  background: linear-gradient(to right, #199512,rgb(217, 5, 5)); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+.latihan-item:nth-child(8) {
+  background: linear-gradient(to right, #199512,rgb(6, 98, 114)); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+.latihan-item:nth-child(9) {
+  background: linear-gradient(to right, #199512,rgb(133, 171, 5)); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+.latihan-item:nth-child(10) {
+  background: linear-gradient(to right, #199512,rgb(100, 3, 197)); /* Memberikan latar belakang gradien untuk kotak pertama */
+}
+
+.latihan-list {
+  display: grid; /* Mengatur layout menggunakan grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Membuat kolom dengan lebar minimum 250px, menyesuaikan ruang yang tersedia */
+  gap: 20px; /* Memberikan jarak antar elemen grid sebesar 20px */
+  margin-top: 20px; /* Memberikan jarak atas 20px pada daftar latihan */
+  box-shadow:  10 px 10px 10px 100px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+}
+
+.latihan-item {
+  background-color: white; /* Memberikan warna latar belakang putih untuk setiap item latihan */
+  border-radius: 10px; /* Membuat sudut elemen menjadi melengkung dengan radius 10px */
+  box-shadow: 10px 4px 6px rgba(4, 5, 7, 0.822); /* Memberikan efek bayangan ringan di bawah elemen */
+  padding: 20px; /* Memberikan ruang di dalam item latihan sebesar 20px */
+  text-align: center; /* Mengatur teks di dalam item agar rata tengah */
+  transition: transform 0.3s, box-shadow 0.3s; /* Menambahkan animasi transisi saat item di-hover */
+  
+}
+.latihan-list:hover {
+  transform: translateY(-5px); /* Memindahkan item latihan ke atas sebesar 5px saat di-hover */
+  box-shadow: 10px 6px 12px rgb(10, 7, 7); /* Menambahkan efek bayangan lebih gelap dan besar saat di-hover */
+}
+
+.latihan-item:hover {
+  transform: translateY(-5px); /* Memindahkan item latihan ke atas sebesar 5px saat di-hover */
+  box-shadow: 10px 6px 12px rgb(140, 5, 5); /* Menambahkan efek bayangan lebih gelap dan besar saat di-hover */
+}
+
+.latihan-item h2 {
+  font-size: 20px; /* Mengatur ukuran teks heading menjadi 20px */
+  margin-bottom: 10px; /* Memberikan jarak bawah 10px pada heading */
+}
+
+.latihan-item p {
+  font-size: 20px; /* Mengatur ukuran teks paragraf menjadi 14px */
+  margin-bottom: 15px; /* Memberikan jarak bawah 15px pada paragraf */
+}
+
+.tombol-latihan {
+  background-color: #035b06; /* Memberikan warna latar belakang biru pada tombol */
+  color: rgb(255, 255, 255); /* Memberikan warna teks putih */
+  border: none; /* Menghapus border tombol */
+  padding: 10px 20px; /* Memberikan ruang di dalam tombol: 10px atas/bawah dan 20px kiri/kanan */
+  border-radius: 5px; /* Membulatkan sudut tombol dengan radius 5px */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+  transition: background-color 0.3s; /* Menambahkan transisi perubahan warna latar belakang selama 0.3 detik */
+  box-shadow: 10px 5px 10px rgba(19, 12, 12, 0.996); /* Menambahkan efek bayangan */
+}
+
+.tombol-latihan:hover {
+  background-color: #9b0505; /* Mengubah warna latar belakang tombol menjadi biru gelap saat di-hover */
+}
+
+
+#beranda {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow:  1px 1px 100px 1px rgba(0, 0, 0, 0.5); /* Menambahkan efek bayangan */
+}
+
+/* Gaya formulir kontak */
+form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  box-shadow:  10px 10px 100px 5px rgba(124, 69, 2, 0.998); /* Menambahkan efek bayangan */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 3px solid #4b2502;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  box-shadow:  10px 15px 10px 5px rgba(124, 69, 2, 0.457); /* Menambahkan efek bayangan */
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Gaya pesan respons */
+#responseMessage {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Gaya popup notifikasi */
+#notifPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1000;
+  display: none; /* Disembunyikan secara default */
+}
+
+#notifPopup button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#notifPopup button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Kelas untuk menampilkan popup */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+footer {
+  text-align: center; /* Mengatur teks di footer agar rata tengah */
+  padding: 15px; /* Memberikan ruang di dalam footer sebesar 15px */
+  background-color: #463a22e7; /* Memberikan warna latar belakang  untuk footer */
+  color: white; /* Memberikan warna teks putih */
+
+  
+}
+#jawaban {
+  margin: 20px;
+  text-align: left; /* Membuat teks dalam textarea menjadi rata kiri */
+  margin: 14px 0; /* Memberikan jarak vertikal */
+  font-size: 14px; /* Mengatur ukuran teks */
+  line-height: 1.5; /* Memberikan spasi antar baris */
+  box-shadow: 100px 100px 100px rgba(4, 3, 3, 0.39); /* Menambahkan efek bayangan */
+  }
+  
+
+#jawaban textarea {
+  font-family: 'Times New Roman', Times, left;
+  margin: 0;
+  padding: 10px;
+  background-color: #ece0e0;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.312);
+  width: 95%;
+  height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+  font-size: 16px;
+  border: 5px solid #432405;
+  border-radius: 5px;
+  text-align: left; /* Teks rata kiri */
+  overflow-y: auto; /* Menambahkan scroll jika teks melampaui batas */
+  text-align: left; /* Placeholder juga rata kiri */
+}
+
+#jawaban textarea::placeholder {
+  text-align: left; /* Placeholder juga rata kiri */
+}
+
+#jawaban button {
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: #7a4608;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#jawaban button:hover {
+  background-color: #b35d12;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 50.25%; /* Rasio aspek 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #f2e5e5;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
